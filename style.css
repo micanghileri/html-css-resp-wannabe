@@ -1,3 +1,7 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
 .row {
   width: 992px;
   margin-left: auto;
@@ -70,4 +74,35 @@ img {
 
 .clear {
   clear: both;
+}
+
+@media screen and (max-width: 420px) {
+
+    .row {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* blocco lezioni */
+    #lezioni .row>.left,
+    #lezioni .row>.right {
+      width: 100%;
+      padding-top: 20px;
+      background-color: red;
+    }
+
+    #lezioni .row>.right {
+        padding-bottom: 20px;
+    }
+
+    /* blocco steps */
+    #steps .row>.left,
+    #steps .row>.central,
+    #steps .row>.right {
+      width: 100%;
+    }
+
+    img {
+      height: 100px;
+    }
 }
